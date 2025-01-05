@@ -1,0 +1,30 @@
+/* styles.css */
+body {
+    margin: 0;
+    height: 100vh;
+    /*background: linear-gradient(45deg, #ff7e5f, #feb47b, #ff6347, #ff1493, #20b2aa, #6a5acd, #ff7e5f, #ff6347);*/
+    background: linear-gradient(45deg, 
+    #ff7e5f,    /* Coral */
+    #ff9f80,    /* Light Coral */
+    #feb47b,    /* Light Orange */
+    #ff6347,    /* Tomato */
+    #ff1493,    /* Deep Pink */
+    #a88ae0,    /* Light Lavender (intermediate to blue) */
+    #20b2aa,    /* Light Sea Green */
+    #6a5acd,    /* Slate Blue */
+    #8a2be2,    /* Blue Violet (transition to blue) */
+    #ff7e5f     /* Coral (back to the start for seamless loop) */  
+);
+    background-size: 1000% 1000%; /* Smaller gradient size to avoid harsh seams */
+    animation: whirlpool 20s ease infinite; /* Smooth whirlpool movement */
+}
+
+/* Keyframes for continuous one-way whirlpool effect with more keyframes */
+@keyframes whirlpool {
+    0% {
+        background-position: 100% 0%; /* Start at top-left */
+    }
+    100% {
+        background-position: 0% 100%; /* End at top-left */
+    }
+}
